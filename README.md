@@ -4,10 +4,10 @@
 * ie8.css 为ie8下的样式（由于不支持媒体查询，本想使用jq判断浏览器为ie8且屏幕高度小于一定尺寸就触发改变高度，现统一ie8就减小高度）
  
 ## 兼容性（已踩的坑）
-###样式方面
-###ie8- 不支持部分css3样式，如常见的flex布局, border-radius, rgba, last-child等；
-###解决方案
-###border-radius
+### 样式方面
+### ie8- 不支持部分css3样式，如常见的flex布局, border-radius, rgba, last-child等；
+### 解决方案
+### border-radius
 * 引用PIE.js至index文件中，然后获取要使用圆角属性的元素并且初始化；
 * css中引入 behavior：url(PIE.htc) 使用的路径是相对于index.html的路径； 
 
