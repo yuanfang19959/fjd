@@ -1,0 +1,445 @@
+@media screen and (max-width: 1366px) {
+    .jimi {
+        height: 620px!important;
+    }
+    .chatBox{
+        height: 400px!important;
+    }
+    .jimi-left-content{
+        max-height: 507px!important;
+    }
+    .bodyright_content{
+        max-height: 480px!important;
+    }
+}
+
+/* 部分公用字体属性 */
+.fontCommon{
+    font-size:12px;
+    font-weight: 400;
+}
+
+/* 清除浮动 */
+.clearFloat{
+    clear:both;
+}
+
+html,body,.app{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #333333;
+    overflow-y:hidden;
+}
+
+.main {
+    position: relative;
+    padding-top: 3%;
+    width: 100%;
+    height: 100%;
+    background: #2e2f3d;
+}
+
+/* 中间大窗口 */
+.jimi {
+    position: relative;
+    z-index: 2;
+    width: 1130px;
+    height: 700px;
+    max-height: 750px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    behavior: url(js/PIE.htc);
+    background: #fff;
+}
+
+/* 左联系人包括头部 */
+.left-pane {
+    float: left;
+}
+
+/* 右边大区域 */
+.right-pane {
+    float: left;
+    width: 880px;
+}
+
+.jimi-left {
+    width: 250px;
+}
+
+/* 左侧联系人头部区域 */
+.jimi-left-header {
+    padding: 10px;
+    max-height: 104px;
+    background: #FF534C;
+}
+
+.jimi-left-header>img {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+.jimi-left-header span {
+    vertical-align: top;
+    display: inline-block;
+    text-overflow: ellipsis;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* 搜索框 */
+.inputSearch {
+    width: 100%;
+    min-height: 23px;
+    margin: 5px 0;
+    border-radius: 5px;
+    line-height: 20px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.inputSearch img {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.inputSearch input {
+    width: 88%;
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    color: #2e2f3d;
+}
+
+/* 联系人区域 */
+.jimi-left-content {
+    max-height: 594px;
+    overflow-y: auto;
+}
+
+/* 单个联系人 */
+.perMessage {
+    padding: 10px;
+    background: #F2F5F9;
+}
+
+.perMessage img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.perMessage span {
+    display: inline-block;
+    width: 155px;
+    height: 15px;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+
+/* 中间聊天消息部分 */
+.head {
+    min-height: 40px;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+.head>img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.head>span {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* 聊天内容部分 */
+.chatBox {
+    height: 480px;
+    padding: 10px;
+    overflow-y: auto;
+    border: 1px solid #cec1c1;
+    border-bottom: none;
+    background: #ffffff;
+}
+
+/* 客服消息 */
+.personA{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.personNameA {
+    margin-bottom: 10px;
+    padding-left: 40px;
+    color: #a7afb8;
+}
+
+.personContent>img{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    vertical-align: top;
+}
+
+.talkContent{
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin-left: 15px;
+    max-width: 355px;
+    padding: 10px;
+    border-radius: 5px;
+    behavior: url(js/PIE.htc);
+    background: #fc0;
+}
+
+.triangle{
+    position:absolute;
+    top: 31px;
+    left: 40px;
+    display:block;
+    width:0;
+    height:0;
+    border-width:5px 10px 5px 0;
+    border-style:solid;
+    border-color:transparent #fc0 transparent transparent;/*透明 黄 透明 透明 */
+}
+
+/* 用户消息 */
+.personB{
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: 60px;
+}
+
+.personNameB{
+    float: right;
+    margin-bottom: 10px;
+    padding-right: 40px;
+    color: #a7afb8;
+}
+
+.personContentB>img{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-left: 22px;
+    border-radius: 5px;
+    vertical-align: top;
+}
+
+.talkContentB{
+    position: relative;
+    z-index: 2;
+    float: right;
+    max-width: 355px;
+    padding: 10px;
+    border-radius: 5px;
+    behavior: url(js/PIE.htc);
+    background: #87d16a;
+}
+
+.talkContentB img{
+    width: 150px;
+    height: 100px;
+}
+
+.triangleB{
+    position:absolute;
+    top:31px;
+    right:43px;
+    display:block;
+    width:0;
+    height:0;
+    border-width:5px 0 5px 10px;
+    border-style:solid;
+    border-color:transparent transparent transparent #87d16a;/*透明 透明 透明 黄*/
+}
+
+/* 聊天输入窗口部分 */
+.inputBox {
+    position: relative;
+    height: 123px;
+    padding:5px 10px;
+    border: 1px solid #cec1c1;
+    border-bottom: none;
+    background: #fff;
+}
+
+.inputBox_top img {
+    width: 20px;
+    height: 20px;
+}
+
+/* 表情框 */
+.emojstext{
+    position: absolute;
+    top: -155px;
+    z-index: 5;
+    display: none;
+    width: 282px;
+    height: 156px;
+    padding:5px;
+    box-sizing: border-box;
+    border: 1px solid #333333;
+    background: #F8F8F8;
+}
+
+.emojstext span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+/* 输入区域 */
+.textarea {
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    font-size: 15px;
+    overflow:auto;
+    white-space: pre-wrap;
+    word-break: break-all;
+    outline: none;
+}
+
+.inputBox_bottom span{
+    float: right;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    background: #177edd;
+    cursor: pointer;
+}
+
+.body_left {
+    float: left;
+    width: 530px;
+}
+
+/* 商品列表 */
+.body_right {
+    float: right;
+    width: 350px;
+    max-height: 830px;
+    background: #fff;
+}
+
+.bodyright_nav span{
+    float: left;
+    width: 175px;
+    padding:10px 0;
+    border-top: 1px solid #E6E6FA;
+    border-bottom:1px solid #E6E6FA;
+    text-align: center;
+    background: #F8F8F8;
+    cursor: pointer;
+}
+
+/* 正在资讯区域 */
+.talkAbout{
+    height: 64px;
+}
+
+.talkAbout .goodsLatest{
+    margin-left: 10px;
+}
+
+.talkAbout .btn,
+.talkContentB .btn{
+    display: none;
+}
+
+.talkContentB .goodsLatest{
+    background: #fff;
+}
+
+/* 最近浏览区域 */
+.bodyright_latest{
+    width: 100%;
+    border-bottom: 1px solid #E6E6FA;
+    text-align: center;
+}
+
+.bodyright_latest span{
+    display: inline-block;
+    width: 120px;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-bottom: 2px solid #DC143C;
+    text-align: center;
+}
+
+.bodyright_content{
+    max-height: 559px;
+    overflow: auto;
+}
+
+.bodyright_content>div{
+    padding-left: 10px;
+    border-top: 1px solid #e1e1e5;
+}
+
+/* 最近浏览单个商品 */
+.goodsLatest {
+    margin: 20px 0;
+}
+
+.goodsLatest img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.goodBottom{
+    position: relative;
+    display: inline-block;
+    width: 225px;
+}
+
+.goodBottom>.name{
+    display: inline-block;
+    width: 255px;
+    height: 40px;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.goodBottom .price{
+    font-size: 14px;
+    color: #DC143C;
+}
+
+.goodBottom .btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+    border: 1px solid #F8F8F8;
+    cursor: pointer;
+}
+
+.upload{
+    position: absolute;
+    left: 35px;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    background: #fff;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0); 
+    /* 兼容ie8及以下的浏览器 */
+}

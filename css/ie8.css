@@ -1,0 +1,35 @@
+/* ie8浏览器样式重写 */
+.jimi {
+    height: 620px;
+}
+
+.chatBox{
+    height: 400px;
+}
+
+.jimi-left-content{
+    max-height: 507px;
+}
+
+.bodyright_content{
+    max-height: 480px!important;
+}
+
+.jimi-left-header{
+    border-radius:5px 0 0 0;
+    behavior: url(js/PIE.htc);
+}
+
+.jimi-left-content{
+    margin-left: 2px;
+    border-radius:0 0 0 5px;
+    behavior: url(js/PIE.htc);
+}
+
+.body_left{
+    width: 526px;
+}
+
+.right-pane{
+    width: 876px;
+}
