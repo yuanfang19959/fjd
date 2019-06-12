@@ -4,8 +4,8 @@
 * ie8.css 为ie8下的样式（由于不支持媒体查询，本想使用jq判断浏览器为ie8且屏幕高度小于一定尺寸就触发改变高度，现统一ie8就减小高度）
  
 ## 兼容性（已踩的坑）
-## 样式方面
-###ie8- 不支持部分css3样式，如常见的flex布局, border-radius, rgba, last-child等；
+###样式方面
+####ie8- 不支持部分css3样式，如常见的flex布局, border-radius, rgba, last-child等；
 ####解决方案
 ####border-radius
 * 引用PIE.js至index文件中，然后获取要使用圆角属性的元素并且初始化；
@@ -20,13 +20,11 @@
 * 元素少的情况下可使用 li:first-child + li + li 表示第三个li
 
 #### border-box 和 content-box
-#### 区别
 * border-box：元素内容的宽高等于：元素的宽高 - （ border + padding ）
 * content-box ：元素宽高不受padding和margin影响
 * 在网页的顶部加上 doctype 声明。假如不加 doctype 声明，那么各个浏览器会根据自己的行为去理解网页
 
 ### ie8不支持媒体查询
-####解决方案
 ```
 <!--[if IE 8]>
     <link rel="stylesheet" href="css/ie8.css">
@@ -44,7 +42,9 @@
 * 内层元素padding:1px;
 
 ### pre标签可替代常见的textarea
-* <pre contenteditable="true" class="textarea" id="cc"></pre>
+```
+<pre contenteditable="true" class="textarea" id="cc"></pre>
+```
 * contenteditable="true" 设置为true表示可以输入
 * white-space: pre-wrap; // 保留空白符序列，但是正常地进行换行
 * word-break: break-all; //允许在单词内换行。
@@ -53,12 +53,12 @@
 --------------------------------------------------------------
 
 ## CSS规范方面
-*结构命名方面相对以前进步一点点；
-*CSS代码 按照一定的顺序写，提高可读性；按照如下顺序：
-    * 布局方式、位置，相关属性(position, left, right, top, bottom, z-index)
-    * 盒模型，相关属性包括(display, float, width, height, margin, padding, border, border-radius)
-    * 文本排版，相关属性(font, color, background, line-height, text-align)
-    * 视觉外观，相关属性(color, background, list-style, transform, animation)
+* 结构命名方面相对以前进步一点点；
+* CSS代码 按照一定的顺序写，提高可读性；按照如下顺序：
+* 布局方式、位置，相关属性(position, left, right, top, bottom, z-index)
+* 盒模型，相关属性包括(display, float, width, height, margin, padding, border, border-radius)
+* 文本排版，相关属性(font, color, background, line-height, text-align)
+* 视觉外观，相关属性(color, background, list-style, transform, animation)
 --------------------------------------------------------------
 
 ## js方面
