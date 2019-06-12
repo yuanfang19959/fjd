@@ -13,9 +13,8 @@
 
 #### rgba透明度
 ```
-  background: rgba(255,255,255,0.1);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19ffffff,
-endColorstr=#19ffffff);
+background: rgba(255,255,255,0.1);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19ffffff,endColorstr=#19ffffff);
 ```
 *  当上一行的透明度不起作用的时候执行。这句话的意思本来是用来做渐变的。但是这个地方不需要渐变。所以两个颜色都设置成了相同的颜色。
 
